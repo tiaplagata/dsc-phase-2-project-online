@@ -1,6 +1,6 @@
 # Welcome to an exploration of King County real-estate!
 
-![hello](https://i.kym-cdn.com/photos/images/original/000/374/578/a42.jpg)
+![hello](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/images/King%20County%20Real%20Estate.png?raw=true)
 
 # Navigation
 
@@ -16,9 +16,9 @@
 
 * [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/Microsoft_Movie_Studios.pdf)
 * [Non-Technical Video Presentation](https://youtu.be/vTKpMueOnNg)
-* [Jupyter Notebook with Cleaning](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/student.ipynb)
-* [Jupyter Notebook with Exploratory Data Analysis (EDA)](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/student.ipynb)
-* [Jupyter Notebook with Linear Regression Modeling and Validation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/student.ipynb)
+* [Jupyter Notebook with Cleaning](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/notebooks/Cleaning_Workbook.ipynb)
+* [Jupyter Notebook with Exploratory Data Analysis (EDA)](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/notebooks/EDA_Questions_Notebook.ipynb)
+* [Jupyter Notebook with Linear Regression Modeling and Validation](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/notebooks/Linear_Regression_Workbook.ipynb)
 
 # Project Overview
 
