@@ -115,38 +115,21 @@ These findings can be very useful when creating our model and considering the wh
 
 # Linear Regression Model
 
-This linear regression model is able to predict the housing price in King County with roughly 80% accuracy. The average of mean squared errors using a k-fold cross validation with 20 folds is 0.19, meaning the average distance between the model prediction and the data is very small. When performing a train-test split with a 70:30 ratio, the mean squared errors are 0.1890 and 0.1887 respectively. Since they are very close, we can assume that the model is not overfit. 
-
-**Meeting Assumptions**
-
-This linear regression model meets the following assumptions:
-- The features are linearly related to the target.
-    - Features whose coefficients had a p-value greater than 0.05 (our alpha) were removed from the model.
-- There is little to no multicollinearity in this model. 
-    - VIF score for this model was less than 3 (2.5) indicating low multicollinearity of features. 
-    - Condition number was 612, which is another indication of low multicollinearity of features.
-- The distribution of model residuals are normally distributed.
-    - When plotting the distribution of residuals, the curve looks pretty normal, but has some kurtosis.
-    - The model residuals did not pass the Shapiro-Wilkes Test for normality on their own due to a very large number of data points (over 20,000)
-    - However, a random sample of 500 residuals DOES pass the Shapiro-Wilkes test for normality.
-- The model residuals have some homoscedasticity.
-    - When plotting a scatterplot of model residuals, there seems to be homoscedasticity (even scatter).
-    - However, the residuals did not pass the Breusch-Pagan Test for homoscedasticity, meaning that this assumption is not totally met. The failure to pass this test could also be due to the very large number of data points. 
-- Significance of Beta Coefficients
-    - All beta coefficients had a p-value of 0.000, indicating significance in the model.
-    - Any beta coefficient greater than 0.05 (alpha) was removed from the model in one of the iterations.
+This linear regression model is able to predict the housing price in King County with roughly 70% accuracy. The average difference between actual price and predicted price is 116,728-117,571 USD (train and test rsme respectively).
     
-**Features Used, and their coefficients:**
-- 'price_per_livingsqft_log': 0.6568
-- 'bedrooms': 0.6945
-- 'view': 0.0864
-- 'condition': 0.0359
-- 'grade': 0.4154
-- 'is_city': -0.1158
-- 'home_age': 0.0053
-- 'bath-bed': -0.4405
+**Features Used to predict home price:**
+- Living square footage
+- Lot square footage
+- Latitude coordinate of home location
+- Age of home
+- Difference in lot size between home lot size and that of 15 closest neighbors
+- Number of bedrooms and bathrooms
+- Waterfront property (Y/N)
+- Rating of view from home (0-4)
+- Grade given to home by King County
+- Zipcode
+- If/when home was renovated
 
-    
 In conclusion, this model functions fairly well, but could benefit from more tinkering to increase the r2 score (see more in future work).
 
 
@@ -154,13 +137,7 @@ In conclusion, this model functions fairly well, but could benefit from more tin
 
 If I had time to explore further, I would investigate the following:
 
-**EDA**
 * Dig deeper into the qualities of the homes in these areas, such as home condition and grade to see what other characteristics besides the home's location and sq footage affect the price.
 * Look at some of the characteristics of the most expensive zipcodes that are not densely populated (ex. 98039) to see what makes them so expensive.
 * Look at renovated homes vs non renovated homes built in the same year to see how much value a renovation adds.
 
-**Linear Model**
-* Re-engineer the is_city feature to categorize the higher-priced suburban neighborhoods within the feature or split categories by neighborhood in a new feature.
-* Play around more with living square footage to see if I can use that feature without having too much multicollinearity in the model.
-* Do more research on Seattle to see what other features I could build to better predict the home price (i.e. school distrcits, crime rates, etc.).
-* Play with polynomial or interaction terms to see their effect on the model.
