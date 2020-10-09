@@ -14,7 +14,7 @@
 
 # Important Links
 
-* [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-1-project-online/blob/master/Microsoft_Movie_Studios.pdf)
+* [Slideshow Presentation](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/King%20County%20Real%20Estate.pdf)
 * [Non-Technical Video Presentation](https://youtu.be/vTKpMueOnNg)
 * [Jupyter Notebook with Cleaning](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/notebooks/Cleaning_Workbook.ipynb)
 * [Jupyter Notebook with Exploratory Data Analysis (EDA)](https://github.com/tiaplagata/dsc-phase-2-project-online/blob/master/notebooks/EDA_Questions_Notebook.ipynb)
