@@ -123,10 +123,8 @@ This linear regression model is able to predict the housing price in King County
 - Latitude coordinate of home location
 - Age of home
 - Difference in lot size between home lot size and that of 15 closest neighbors
-- Number of bedrooms and bathrooms
 - Waterfront property (Y/N)
 - Rating of view from home (0-4)
-- Grade given to home by King County
 - Zipcode
 - If/when home was renovated
 
